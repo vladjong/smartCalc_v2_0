@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>CreditView</class>
+    <widget class="QDialog" name="CreditView">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>605</width>
+                <height>401</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>605</width>
+                <height>401</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>605</width>
+                <height>401</height>
+            </size>
+        </property>
+        <property name="font">
+            <font />
+        </property>
+        <property name="windowTitle">
+            <string>Dialog</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">background-color:  #ebeae6;</string>
+        </property>
+        <property name="sizeGripEnabled">
+            <bool>false</bool>
+        </property>
+        <property name="modal">
+            <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="gridLayoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>19</x>
+                    <y>19</y>
+                    <width>568</width>
+                    <height>211</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font />
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+                <item row="1" column="1">
+                    <widget class="QLineEdit" name="termLineCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>23</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>3</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="1">
+                    <widget class="QLineEdit" name="rateLineCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>12.1</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>4</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="1">
+                    <widget class="QRadioButton" name="annuityRadioButton">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+	padding: 0.5em 0.5em;
+	background: transparent;
+	color: #ff513c;
+}
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #ff513c;
+    border: 2px solid #ff513c
+}
+
+QRadioButton::indicator:unchecked {
+    border: 2px solid #ff513c;
+}</string>
+                        </property>
+                        <property name="text">
+                            <string>Annuity payment</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="0" column="0">
+                    <widget class="QLineEdit" name="lineEdit_1">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Amount of credit, RUB:</string>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="0" column="1">
+                    <widget class="QLineEdit" name="amountLineCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>1000000</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>12</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="3">
+                    <widget class="QComboBox" name="dateComboBox">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>13</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+width: 70px;
+color: #3c3b3a;</string>
+                        </property>
+                        <item>
+                            <property name="text">
+                                <string>month</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>year</string>
+                            </property>
+                        </item>
+                    </widget>
+                </item>
+                <item row="3" column="0">
+                    <widget class="QRadioButton" name="differentiatedRadioButton">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+	padding: 0.5em 0.5em;
+	background: transparent;
+	color: #ff513c;
+}
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #ff513c;
+    border: 2px solid #ff513c
+}
+
+QRadioButton::indicator:unchecked {
+    border: 2px solid #ff513c;
+}</string>
+                        </property>
+                        <property name="text">
+                            <string>Differentiated payment</string>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="0">
+                    <widget class="QLineEdit" name="lineEdit_2">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Credit term:</string>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="0">
+                    <widget class="QLineEdit" name="lineEdit_3">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Interest rate, %:</string>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="5" column="0" colspan="4">
+                    <widget class="QPushButton" name="resultCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>16</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">QPushButton {
+        background-color: #ff513c;
+        border-radius:0.4em;
+        padding: 0.7em 1.7em;
+        border: none;
+        color: #ebeae6;
+        text-transform: uppercase;
+}
+
+QPushButton:pressed {
+        color: rgba(41, 47, 46, 231);
+}</string>
+                        </property>
+                        <property name="text">
+                            <string>Result</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget_2">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>230</y>
+                    <width>471</width>
+                    <height>141</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>JetBrains Mono</family>
+                </font>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="1">
+                    <widget class="QLineEdit" name="monthlyPaymentLineCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>30</number>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="0">
+                    <widget class="QLineEdit" name="lineEdit_6">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Total payment, RUB</string>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="1">
+                    <widget class="QLineEdit" name="overpaymentLineCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>12</number>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="1">
+                    <widget class="QLineEdit" name="totalLineCredit">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>12</number>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="0">
+                    <widget class="QLineEdit" name="lineEdit_5">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Overpayment on credit, RUB:</string>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="0" column="0">
+                    <widget class="QLineEdit" name="lineEdit_4">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+width: 240 px;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Monthly payment amount, RUB:</string>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources />
+    <connections />
+</ui>

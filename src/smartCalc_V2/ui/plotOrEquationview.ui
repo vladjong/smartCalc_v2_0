@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>plotOrEquationView</class>
+    <widget class="QDialog" name="plotOrEquationView">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>541</width>
+                <height>230</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>541</width>
+                <height>230</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>541</width>
+                <height>230</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Dialog</string>
+        </property>
+        <property name="styleSheet">
+            <string notr="true">background-color:  #ebeae6;</string>
+        </property>
+        <widget class="QWidget" name="gridLayoutWidget">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>10</y>
+                    <width>501</width>
+                    <height>161</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>14</pointsize>
+                </font>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+                <item row="1" column="2">
+                    <widget class="QLineEdit" name="equationXValueLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>10</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>7</number>
+                        </property>
+                        <property name="readOnly">
+                            <bool>false</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="1">
+                    <widget class="QLineEdit" name="equationXLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="layoutDirection">
+                            <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>X:</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="3">
+                    <widget class="QLineEdit" name="plotXmaxLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Xmax:</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="2">
+                    <widget class="QLineEdit" name="plotXminValueLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>-10</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>8</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="4">
+                    <widget class="QLineEdit" name="plotYmaxValueLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>3</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>8</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="2">
+                    <widget class="QLineEdit" name="plotYminValueLine">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>-3</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>8</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="1">
+                    <widget class="QLineEdit" name="plotYminLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Ymin:</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="4">
+                    <widget class="QLineEdit" name="plotXmaxValueLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+color: #aca7a4;</string>
+                        </property>
+                        <property name="text">
+                            <string>10</string>
+                        </property>
+                        <property name="maxLength">
+                            <number>8</number>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="1">
+                    <widget class="QLineEdit" name="plotXminLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Xmin:</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="3" column="3">
+                    <widget class="QLineEdit" name="plotYmaxLine">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>14</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">background: transparent;
+border: none;
+color: #3c3b3a;</string>
+                        </property>
+                        <property name="text">
+                            <string>Ymax:</string>
+                        </property>
+                        <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                        </property>
+                        <property name="readOnly">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="1" column="0">
+                    <widget class="QRadioButton" name="equationRadioButton">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>16</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+	padding: 0.5em 0.5em;
+	background: transparent;
+	color: #ff513c;
+}
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #ff513c;
+    border: 2px solid #ff513c
+}
+
+QRadioButton::indicator:unchecked {
+    border: 2px solid #ff513c;
+}</string>
+                        </property>
+                        <property name="text">
+                            <string>Equation</string>
+                        </property>
+                        <property name="checked">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </item>
+                <item row="2" column="0">
+                    <widget class="QRadioButton" name="plotRadioButton">
+                        <property name="font">
+                            <font>
+                                <family>JetBrains Mono</family>
+                                <pointsize>16</pointsize>
+                                <bold>false</bold>
+                            </font>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true">QRadioButton {
+	padding: 0.5em 0.5em;
+	background: transparent;
+	color: #ff513c;
+}
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #ff513c;
+    border: 2px solid #ff513c
+}
+
+QRadioButton::indicator:unchecked {
+    border: 2px solid #ff513c;
+}</string>
+                        </property>
+                        <property name="text">
+                            <string>Plot</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QPushButton" name="resultPlotOrEquaButton">
+            <property name="geometry">
+                <rect>
+                    <x>180</x>
+                    <y>180</y>
+                    <width>192</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <family>JetBrains Mono</family>
+                    <pointsize>14</pointsize>
+                    <bold>true</bold>
+                </font>
+            </property>
+            <property name="styleSheet">
+                <string notr="true">QPushButton {
+        background-color: #ff513c;
+        border-radius:0.4em;
+        padding: 0.7em 1.7em;
+        border: none;
+        color: #ebeae6;
+        text-transform: uppercase;
+}
+
+QPushButton:pressed {
+        color: rgba(41, 47, 46, 231);
+}</string>
+            </property>
+            <property name="text">
+                <string>RESULT</string>
+            </property>
+        </widget>
+    </widget>
+    <resources />
+    <connections />
+</ui>
