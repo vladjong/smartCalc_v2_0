@@ -1,4 +1,10 @@
-![](smartCalc.png) Documentation SMARTCALC\_V1.0 
+![](smartCalc.png) 
+
+HOW TO BUILD:
+=============================
+#### - If you have a mac you can just run the file smartCalc_V2
+#### - Can be opened in Qt creator
+#### - Take advantage MAKEFILE
 
 DOCUMENTATION SMARTCALC\_V2.0
 =============================
