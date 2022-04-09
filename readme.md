@@ -1,4 +1,4 @@
-![](smartCalc.png) 
+![](smartCalc.gif) 
 
 HOW TO BUILD:
 =============================
