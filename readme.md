@@ -1,4 +1,4 @@
-![](smartCalc.gif) 
+![](image/main.png) 
 
 HOW TO BUILD:
 =============================
@@ -14,7 +14,8 @@ LET'S GO!
 
 **SMARTCALC\_V2.0** - this is a convenient utility, which consists of two blocks, will help you calculate your any expressions and calculate the interest on the loan
 
-#### The set includes the following types of calculators:
+#### Example:
+![](image/smartCalc.gif) 
 
 1.  **Smart calculator** - is an application that allows you to calculate basic arithmetic operations and build graphs
 2.  **Credit calculator** - is an application that allows you to calculate annuity and differentiated credit
